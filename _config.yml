@@ -1,1 +1,5 @@
 theme: jekyll-theme-minimal
+title: Martin Uhrin
+author: Martin Uhrin
+plugins:
+  - jekyll-seo-tag

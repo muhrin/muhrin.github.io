@@ -1,10 +1,12 @@
 ### [Home](/index) |  [Code](#code)
 
-Hi and welcome!  My name is Martin Uhrin, I'm a computational physicist with many interests but most of my work revolves around developing and applying computational methods that help us to understand atomic structures, be they solids, molecules, clusters, etc, and how these relate properties.
+Hi and welcome!  My name is Martin Uhrin, I'm a computational physicist with many interests but most of my work revolves around developing and applying computational methods that help us to understand atomic structures, be they solids, molecules, clusters, etc, and how these relate to their properties.
 
 My dream is to create algorithms that understand the structure/property relationship so well that they can propose brand new structures likely to have some set of desired properties. 
 
 ## Code {#code}
+
+As part of my scientific work I often bake delicious code, and I always share my recipes.  Here's some of the latest.
 
 <img src="https://mincepy.readthedocs.io/en/latest/_static/logo.svg"  width=128 alt="mincePy"/>
 
