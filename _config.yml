@@ -1,4 +1,5 @@
-theme: jekyll-theme-minimal
+#theme: jekyll-theme-minimal
+remote_theme: LeNPaul/Lagrange
 title: Martin Uhrin
 author: Martin Uhrin
 plugins:
