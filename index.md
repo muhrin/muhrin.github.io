@@ -1,4 +1,7 @@
-### [Home](/index) |  [Code](#code)
+---
+layout: post
+title: Martin Uhrin
+---
 
 Hi and welcome!  My name is Martin Uhrin, I'm a computational physicist with many interests but most of my work revolves around developing and applying computational methods that help us to understand atomic structures, be they solids, molecules, clusters, etc, and how these relate to their properties.
 
@@ -6,7 +9,7 @@ My dream is to create algorithms that understand the structure/property relation
 
 ## Code {#code}
 
-As part of my scientific work I often bake delicious code, and I always share my recipes.  Here's some of the latest.
+As part of my scientific work I often bake delicious code, and I always share my recipes.  Here are some of the latest.
 
 <img src="https://mincepy.readthedocs.io/en/latest/_static/logo.svg"  width=128 alt="mincePy"/>
 
@@ -16,7 +19,7 @@ As part of my scientific work I often bake delicious code, and I always share my
 [![Documentation](https://readthedocs.org/projects/mincepy/badge/?version=latest)](https://mincepy.readthedocs.io/en/latest/?badge=latest&style=flat-square)
 
 
-I created mincePy because I wanted to collaborate on scientific projects as easily as it is to work together on a Google Doc, or source in a github repository.
+I created mincePy because I wanted to collaborate on scientific projects as easily as it is to work together on a Google Doc, or source code in a github repository.
 MincePy uses MongoDB to let you store, find and keep versions of any Python object (numpy arrays, pandas `DataFrames`, pytorch networks, etc) in real time from anywhere in the world.
 
 
@@ -37,8 +40,8 @@ PyOS builds on mincePy to provide a bash-like shell where instead of files on yo
 [![Documentation](https://readthedocs.org/projects/kiwipy/badge/?version=latest)](https://kiwipy.readthedocs.io/en/latest/?badge=latest&style=flat-square)
 [![paper](https://joss.theoj.org/papers/10.21105/joss.02351/status.svg)](https://doi.org/10.21105/joss.02351)
 
-KiwiPy is a high-level client for RabbitMQ.  It takes the pain out of creating robust message queues which are any essential part of any automated scientific workflow.  
-Lost your connection the supercomputer?  Laptop crashed whilst running a long, multi-step, workflow?  Need to launch 10k and be certain that they all complete?  KiwiPy takes care of all this and more, with a minimal learning curve.
+KiwiPy is a high-level client for RabbitMQ.  It takes the pain out of creating robust message queues which are an essential part of any automated scientific workflow.  
+Lost your connection the supercomputer?  Laptop crashed whilst running a long, multi-step, workflow?  Need to launch 10k processes and be certain that they all complete?  KiwiPy takes care of all this and more, with a minimal learning curve.
 
 <img src="http://www.aiida.net/wp-content/uploads/2013/08/aiida-logo2.png" width="128" alt="AiiDA">
 
