@@ -8,6 +8,7 @@ google-ID: ''
 
 menu:
 - {name: 'Home', url: 'index.html'}
+- {name: 'Codes', path: 'menu', url: 'codes.html'}
 - {name: 'CV', path: 'menu', url: 'cv.html'}
 
 # Available social icons are powered by Font Awesome, so you can use any icon that they offer
