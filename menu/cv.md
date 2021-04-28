@@ -3,6 +3,8 @@ layout: page
 title: Résumé
 ---
 
+You can download a full cv <a href="{{ site.github.url }}/assets/martin_uhrin_cv.pdf">here</a>.
+
 ## Research Positions
 
 Postdoctoral Researcher, **EPFL, Switzerland**  
