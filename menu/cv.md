@@ -3,22 +3,22 @@ layout: page
 title: Résumé
 ---
 
-## Education
-
-Ph.D. in Physics, **University College London** *(2015)*
-
-M.Phys in Computational Physics, **Edinburgh University** *(2010)*
-
 ## Research Positions
 
 Postdoctoral Researcher, **EPFL, Switzerland**  
 *March 2021 - Present*
 
-Postdoctoral Researcher, **DTU Energy, Danish Technical University, Denmark**  
+Postdoctoral Researcher, **DTU Energy, Danish Technical University**  
 *October 2019 - March 2021*
 
 Postdoctoral Researcher, **EPFL, Switzerland**  
 *January 2015 - January 2019*
+
+## Education
+
+Ph.D. in Physics, **University College London** *(2015)*
+
+M.Phys in Computational Physics, **Edinburgh University** *(2010)*
 
 
 ## Industry Positions
