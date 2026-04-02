@@ -1,0 +1,28 @@
+colorScheme = "martin"
+defaultAppearance = "light"
+autoSwitchAppearance = true
+enableSearch = false
+
+[footer]
+  showScrollToTop = true
+
+[homepage]
+  layout = "profile"
+  showRecent = false
+
+[article]
+  showDate = false
+  showDateUpdated = false
+  showAuthor = false
+  showReadingTime = false
+  showTableOfContents = false
+  showBreadcrumbs = false
+
+[list]
+  showBreadcrumbs = false
+
+[sitemap]
+  excludedKinds = []
+
+[layout]
+  contentWidth = "max-w-3xl"

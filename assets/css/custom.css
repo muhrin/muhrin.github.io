@@ -1,0 +1,28 @@
+/* Override the default max-w-prose (which is ~65ch in Tailwind) */
+.max-w-prose {
+    max-width: none !important;
+}
+
+/* Ensure the main .prose text block also expands and is left-aligned */
+.prose {
+    max-width: none !important;
+    text-align: left !important;
+}
+
+.prose p {
+    text-align: left !important;
+}
+
+/* Force block and inline images (like badges) along with their Hugo formatting wrappers to render side-by-side */
+.prose figure,
+.prose img,
+.prose picture {
+    display: inline-block !important;
+    margin: 0 !important;
+}
+
+
+/* User custom text alignment override */
+.text-center {
+    text-align: justify !important;
+}

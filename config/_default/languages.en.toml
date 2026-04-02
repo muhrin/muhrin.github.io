@@ -1,0 +1,18 @@
+languageCode = "en"
+languageName = "English"
+weight = 1
+
+title = "Martni Uhrin/Digital Baker/"
+
+[params]
+  description = "Personal website of Martin Uhrin, computational physicist and software engineer."
+
+[params.author]
+  name = "Martin Uhrin"
+  headline = "Computational Physicist & Software Engineer"
+  bio = "I have a mixed physics and computer science background and love to work at their intersection. My current focus is on generative models and equivariant neural networks for atomic structure prediction."
+  links = [
+    {github = "https://github.com/muhrin"},
+    {linkedin = "https://www.linkedin.com/in/martin-uhrin-6ab4718/"},
+    {email = "mailto:martin@digitalbaker.net"},
+  ]
