@@ -1,14 +1,14 @@
 colorScheme = "martin"
 defaultAppearance = "light"
 autoSwitchAppearance = true
-enableSearch = false
+enableSearch = true
 
 [footer]
   showScrollToTop = true
 
 [homepage]
   layout = "profile"
-  showRecent = false
+  showRecent = true
 
 [article]
   showDate = false

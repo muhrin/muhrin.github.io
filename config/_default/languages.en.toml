@@ -2,7 +2,7 @@ languageCode = "en"
 languageName = "English"
 weight = 1
 
-title = "Martni Uhrin/Digital Baker/"
+title = "Martin Uhrin/Digital Baker/"
 
 [params]
   description = "Personal website of Martin Uhrin, computational physicist and software engineer."
@@ -14,5 +14,7 @@ title = "Martni Uhrin/Digital Baker/"
   links = [
     {github = "https://github.com/muhrin"},
     {linkedin = "https://www.linkedin.com/in/martin-uhrin-6ab4718/"},
+    {google-scholar = "https://scholar.google.com/citations?user=coQ8EwwAAAAJ"},
+    {orcid = "https://orcid.org/0000-0001-6902-1289"},
     {email = "mailto:martin@digitalbaker.net"},
   ]

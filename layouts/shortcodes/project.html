@@ -1,0 +1,25 @@
+<div class="project-card">
+  <div class="project-header">
+    {{ with .Get "logo" }}
+    <div class="project-logo-container">
+      <img src="{{ . }}" alt="{{ $.Get "title" }}" class="project-logo">
+    </div>
+    {{ end }}
+    <div class="project-title-area">
+      <h3 class="project-title">
+        <a href="{{ .Get "link" }}" target="_blank" rel="noopener noreferrer">
+          {{ .Get "title" }}
+        </a>
+      </h3>
+      {{ with .Get "subtitle" }}
+      <p class="project-subtitle text-sm opacity-80 italic">{{ . }}</p>
+      {{ end }}
+      <div class="project-badges mt-2 flex flex-wrap gap-2">
+        {{ .Get "badges" | markdownify }}
+      </div>
+    </div>
+  </div>
+  <div class="project-content prose dark:prose-invert mt-4 text-sm">
+    {{ .Inner | markdownify }}
+  </div>
+</div>

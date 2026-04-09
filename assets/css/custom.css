@@ -1,19 +1,15 @@
-/* Override the default max-w-prose (which is ~65ch in Tailwind) */
+/* RESTORE READABLE WIDTH */
 .max-w-prose {
-    max-width: none !important;
+    /* No longer forcing none globally */
 }
 
-/* Ensure the main .prose text block also expands and is left-aligned */
-.prose {
-    max-width: none !important;
-    text-align: left !important;
-}
+/* Base prose should keep its standard layout unless specified */
+
 
 .prose p {
     text-align: left !important;
 }
 
-/* Force block and inline images (like badges) along with their Hugo formatting wrappers to render side-by-side */
 .prose figure,
 .prose img,
 .prose picture {
@@ -21,8 +17,215 @@
     margin: 0 !important;
 }
 
-
-/* User custom text alignment override */
 .text-center {
     text-align: justify !important;
+}
+
+/* PREMIUM ENHANCEMENTS */
+
+/* Restricted Glassmorphism - moved to whole container to avoid inner frames */
+.homepage-hero,
+.bg-neutral,
+.bg-neutral-50,
+.bg-secondary-50 {
+    background-color: rgba(255, 255, 255, 0.45) !important;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 0;
+    padding: 2.5rem;
+    box-shadow: 0 12px 40px 0 rgba(31, 38, 135, 0.08);
+}
+
+.homepage-hero .prose {
+    background: none !important;
+    border: none !important;
+    padding: 0 !important;
+    backdrop-filter: none !important;
+    box-shadow: none !important;
+}
+
+.dark .homepage-hero,
+.dark .bg-neutral,
+.dark .bg-neutral-800 {
+    background-color: rgba(23, 23, 23, 0.7) !important;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+
+
+/* Gradient Headings */
+h1,
+h2,
+h3 {
+    background: linear-gradient(135deg, rgb(var(--color-primary-500)), rgb(var(--color-secondary-500)));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    /* Essential for Firefox gradient text */
+    display: inline-block;
+    font-weight: 800;
+}
+
+
+/* Smooth Transitions & Hover Effects */
+a,
+button {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+a:hover {
+    transform: translateY(-1px);
+    filter: brightness(1.2);
+}
+
+/* Hero Animation conceptually linked to ML/Physics */
+@keyframes mesh-pulse {
+    0% {
+        transform: scale(1);
+        opacity: 0.1;
+    }
+
+    50% {
+        transform: scale(1.05);
+        opacity: 0.15;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 0.1;
+    }
+}
+
+.homepage-hero {
+    position: relative;
+    overflow: hidden;
+}
+
+.homepage-hero::before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background-image: radial-gradient(circle, rgb(var(--color-primary-500)) 1px, transparent 1px);
+    background-size: 40px 40px;
+    animation: mesh-pulse 10s infinite ease-in-out;
+    z-index: -1;
+    pointer-events: none;
+}
+
+/* PROJECT CARDS */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+@media (min-width: 1024px) {
+    .projects-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.project-card {
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    background-color: rgba(255, 255, 255, 0.4) !important;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 0;
+    padding: 1.5rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.dark .project-card {
+    background-color: rgba(23, 23, 23, 0.6) !important;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.project-card:hover {
+    transform: translateY(-8px) scale(1.01);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+    border: 1.5px solid rgba(var(--color-primary-500), 1.0);
+}
+
+.project-header {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.25rem;
+}
+
+.project-logo-container {
+    flex-shrink: 0;
+    width: 64px;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    padding: 0.6rem;
+    border-radius: 0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.project-logo {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.project-title {
+    margin: 0 !important;
+    line-height: 1.2;
+}
+
+.project-title a {
+    text-decoration: none !important;
+    font-size: 1.3rem;
+}
+
+.project-badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.project-badges p {
+    margin: 0 !important;
+    display: flex;
+    gap: 0.5rem;
+}
+
+.project-content {
+    flex-grow: 1;
+}
+
+.project-content p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-top: 1rem !important;
+}
+
+/* EXPAND CODES PAGE WIDTH OVERRIDE */
+.prose:has(.projects-grid),
+.prose:has(.projects-grid) .max-w-prose {
+    max-width: 100% !important;
+    /* Allow the grid to fill the available space */
+    width: 100% !important;
+}
+
+@media (min-width: 1024px) {
+
+    .prose:has(.projects-grid),
+    .prose:has(.projects-grid) .max-w-prose {
+        max-width: 1200px !important;
+    }
 }
